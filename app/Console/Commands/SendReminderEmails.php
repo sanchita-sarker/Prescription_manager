@@ -29,7 +29,7 @@ class SendReminderEmails extends Command
 
         foreach ($reminders as $reminder) {
             // Replace with the user's actual email
-            Mail::to('youremail@example.com')->send(new ReminderNotification($reminder));
+            Mail::to('sarkersanchita319@gmail.com')->send(new ReminderNotification($reminder));
             $this->info("Reminder sent for: {$reminder->medicine_name}");
         }
     }
